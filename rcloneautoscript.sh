@@ -2,24 +2,24 @@
 
 # Variables
 
-#PID
+#PID - Define where the PID should reside
 PIDFILE=
 
-#Rclone transfer type
+#Rclone transfer type - chose which tpye to use, e.g sync, copy, move etc
 TYPE=
 
-#Rclone source dir
+#Rclone source dir - where source files or DIR is located, use full path and double quotes. Can be local or remote
 SOURCE=
 
-#Rclone dest dir
+#Rclone dest dir - where source files or DIR is located, use full path and double quotes. Can be local or remote
 DEST=
 
-#Rclone option flags
-OPT1=
-OPT2=
-OPT3=
-OPT4=
-OPT5=
+#Rclone option flags - uncomment and populate with options as needed.
+#OPT1=
+#OPT2=
+#OPT3=
+#OPT4=
+#OPT5=
 
 
 
@@ -51,7 +51,7 @@ else
 fi
 
 # Run the sync job
-rclone $TYPE "$SOURCE" "$DEST" $OPT1 $OPT2 $OPT3 $OPT4 -v
+rclone $TYPE "$SOURCE" "$DEST" $OPT1 $OPT2 $OPT3 $OPT4 $OPT5 -v
 
 # Remove the PID file
 rm $PIDFILE
