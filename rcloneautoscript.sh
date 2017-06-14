@@ -14,7 +14,7 @@ SOURCE=
 #Rclone dest dir - where source files or DIR is located, use full path and double quotes. Can be local or remote
 DEST=
 
-#Rclone option flags - uncomment and populate with options as needed.
+#Rclone option flags - uncomment and populate with options as needed. I recommend using one of the options for logging to file.
 #OPT1=
 #OPT2=
 #OPT3=
